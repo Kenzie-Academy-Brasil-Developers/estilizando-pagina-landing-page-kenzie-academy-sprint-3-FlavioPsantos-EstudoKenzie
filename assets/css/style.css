@@ -67,7 +67,17 @@ html{}
 /* HTML */
   
 /* BODY */
-body{}
+body{
+
+    /* PARTE VICTOR */
+
+
+
+
+    /* PARTE FLÁVIO */
+
+
+}
 /* BODY */
   
 /* HEADER */
@@ -97,7 +107,29 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+
+    @media screen and (min-width: 400px) {
+
+        /* PARTE VICTOR */
+    
+
+
+
+        /* PARTE FLÁVIO */
+
+
+    }
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+    
+        /* PARTE VICTOR */
+    
+
+
+
+        /* PARTE FLÁVIO */
+
+
+    }
+    
 /* MEDIA QUERIES */
