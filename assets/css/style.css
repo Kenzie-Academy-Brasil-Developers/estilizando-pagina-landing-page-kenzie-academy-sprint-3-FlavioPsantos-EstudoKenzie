@@ -328,13 +328,25 @@ main.inicial .secaoCursos article p{
     padding-bottom: 40px;
 }
 
+main.inicial .secaoCursos article ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 main.inicial .secaoCursos article ul li{
     text-align: center;
     padding: 10px 0;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 main.inicial .secaoCursos article ul li img{
-    width: 30%;
+    height: 130px;
+    width: 140px;
     padding: 20px;
 }
 
@@ -342,6 +354,7 @@ main.inicial .secaoCursos article ul li h3{}
 
 main.inicial .secaoCursos article ul li p{
     color: var(--cinza-claro);;
+    padding: 0
 }
 
 
@@ -370,7 +383,7 @@ main.inicial .secaoCursos article ul li p{
 
 /* MEDIA QUERIES */
 
-    @media screen and (min-width: 400px) {
+    @media (min-width: 400px) {
 
         /* PARTE VICTOR */
     
@@ -382,7 +395,7 @@ main.inicial .secaoCursos article ul li p{
 
     }
   
-    @media screen and (min-width: 800px) {
+    @media (min-width: 800px) {
     
         /* PARTE VICTOR */
     
