@@ -51,6 +51,11 @@ a:link{
     color: #ffffff;
 }
 
+a:visited{
+    text-decoration: none;
+    color: #ffffff
+}
+
 img{
     max-width: 800px;
 }
@@ -229,6 +234,12 @@ main.inicial .secaoSobre {
     flex-direction: column;
 }
 
+main.inicial .secaoSobre .flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 main.inicial .secaoSobre .flex .flex-col {
     display: flex;
     flex-direction: column;
@@ -272,7 +283,8 @@ main.inicial .secaoSobre .flex .flex-col:nth-child(2) figure figcaption{
 
 main.inicial .secaoSobre .flex .flex-col:nth-child(3) {
     text-align: center;
-    padding-bottom: 0
+    padding-bottom: 0;
+    background-color: #f6f6f6;
 
 }
 
@@ -384,7 +396,9 @@ main.inicial .secaoCursos article ul li p{
 /* MEDIA QUERIES */
 
     @media (min-width: 400px) {
-
+        main.inicial .secaoSobre .flex .flex-col:nth-child(1) > button{
+            width: 130px;
+        }
         /* PARTE VICTOR */
     
 
@@ -396,7 +410,30 @@ main.inicial .secaoCursos article ul li p{
     }
   
     @media (min-width: 800px) {
-    
+        
+        header.topo .large-container{
+            justify-content: space-around;
+        }
+
+
+        header.topo .large-container nav ul.desktop{
+            visibility: inherit;
+        }
+
+        header.topo .large-container i{
+            display: none;
+        }
+
+        main.inicial .secaoSobre .flex {
+            flex-direction: row;
+        }
+
+        main.inicial .secaoSobre .flex .flex-col{
+            width: 50%;
+            justify-content: center;
+        }
+
+
         /* PARTE VICTOR */
     
 
