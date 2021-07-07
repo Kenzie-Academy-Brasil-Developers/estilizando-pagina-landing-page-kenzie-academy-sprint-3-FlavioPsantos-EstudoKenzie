@@ -10,6 +10,9 @@
 </head>
 <body>
   
+
+  <!-- INÍCIO PARTE VICTOR -->
+  
   <!-- CABEÇALHO -->
   <header class="topo">
 
@@ -17,23 +20,42 @@
       <!-- LOGO -->
       <figure>
         <img src="assets/img/logo.svg" alt="Logo Kenzie Academy">
-        <figcaption>Logo Kenzie Academy</figcaption>  
       </figure>
 
       <!-- MENU DE NAVEGAÇÃO -->
       <nav>
-        <ul>
+        <ul class="desktop">
           <li><a href="#1">Sobre a Kenzie</a></li>
           <li><a href="#2">Agenda</a></li>
           <li><a href="#3">Contato</a></li>
         </ul>
       </nav>
+
+
+      <i id="menu__open" class=""><img src="assets/img/hamburguer-menu.png" alt=""></i>
+      <i id="menu__close" class="hidden"><img src="assets/img/hamburguer-menu-close.png" alt=""></i>
+
+      <nav id="modal" class="mobile hidden"> 
+        <ul>
+          <figure>
+            <img src="assets/img/logo.svg" alt="Logo Kenzie Academy" id="menu-open">
+          </figure>
+          <li><a href="#1">Sobre a Kenzie</a></li>
+          <li><a href="#2">Agenda</a></li>
+          <li><a href="#3">Contato</a></li>
+        </ul>
+      </nav>
+
+
     </div>
 
   </header>
 
+  
+
   <!-- PÁGINA INICIAL -->
   <main class="inicial">
+
 
     <!-- ÁREA DE DESTAQUE -->
     <section class="secaoDestaque">
@@ -43,12 +65,13 @@
 
       <!-- FORMULÁRIO -->
       <div class="secaoDestaqueFormulario">
-        <input type="email"  placeholder="E-mail" required>
+        <input type="email" placeholder="E-mail" required>
         <button type="button">Subscribe</button>
       </div>
 
     </section>
 
+    
     <!-- SEÇÃO SOBRE -->
     <section class="secaoSobre">
 
@@ -159,6 +182,10 @@
       </article>
 
     </section>
+
+
+    <!-- INÍCIO SEÇÃO FLÁVIO -->
+
 
     <section class="secaoCalendar">
 

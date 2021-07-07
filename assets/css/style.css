@@ -29,16 +29,28 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
+:root{
+    --cinza-claro: #818181
+}
   
 /* GERAL */
 html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     list-style: none;
 }
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:link{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 img{
     max-width: 800px;
 }
@@ -60,18 +72,109 @@ div.container{
     max-width: 1140px;
     margin:0 auto;
 }
+
+.hidden {
+    visibility: hidden;
+}
+
 /* GERAL */
   
 /* HTML */
 html{}
+
 /* HTML */
   
 /* BODY */
-body{}
+body{
+
+    /* PARTE VICTOR */
+
+
+
+    /* PARTE FLÁVIO */
+
+
+}
 /* BODY */
   
 /* HEADER */
-header{}
+header.topo{
+    display: flex;
+    background-color: #00043e;
+}
+
+header.topo .large-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+
+header.topo .large-container figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 10px;
+}
+
+header.topo .large-container figure img{
+    height: 80px;
+}
+
+header.topo .large-container nav{}
+
+header.topo .large-container i{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+header.topo .large-container i > img{
+    height: 30px;
+    width: 30px;
+}
+
+
+header.topo .large-container nav.mobile{
+    width: 80vw;
+    position: absolute;
+    background-color: #007aff;
+    left: 0;
+    top: 0px;
+    bottom: 0;
+}
+
+header.topo .large-container nav.mobile ul{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px ;
+}
+
+header.topo .large-container nav.mobile ul li{
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header.topo .large-container nav ul.desktop{
+    display: flex;
+    visibility: hidden;
+}
+
+header.topo .large-container nav ul li{
+    padding: 5px 10px;
+}
+
+header.topo .large-container nav ul li a{
+    font-size: 13px;
+}
+
+header.topo .large-container nav ul li a:hover{
+    border-bottom: 1px solid #ffffff;
+}
+
+
+
+
 /* HEADER */
   
 /* FOOTER */
@@ -79,7 +182,177 @@ footer{}
 /* FOOTER */
 
 /* INICIAL */
-main{}
+
+main.inicial{}
+
+main.inicial .secaoDestaque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: #00043e;
+}
+main.inicial .secaoDestaque > h2{
+    font-size: 39px;
+    text-align: center;
+    color: white;
+    width: 80vw;
+}
+
+main.inicial .secaoDestaque > p{
+    font-size: 21px;
+    padding: 10px 0;
+    color: white;
+}
+
+main.inicial div.secaoDestaqueFormulario{
+    display: flex;
+    justify-content: center;
+}
+
+main.inicial div.secaoDestaqueFormulario input{
+    border-top-left-radius: 5px;
+}
+
+main.inicial div.secaoDestaqueFormulario button{
+    background-color: #007aff;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+main.inicial .secaoSobre {
+    display: flex;
+    flex-direction: column;
+}
+
+main.inicial .secaoSobre .flex .flex-col {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
+}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(1) > h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(1) > p{
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(1) > span{
+    margin: 50px 0;
+    color: var(--cinza-claro);;
+}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(1) > button{
+    padding: 10px 30px;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid #818181;
+    border-radius: 5px;
+}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(2) {}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(2) figure{}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(2) figure img{
+    width: 100%;
+}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(2) figure figcaption{
+    visibility: hidden;
+}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(3) {
+    text-align: center;
+    padding-bottom: 0
+
+}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(3) figure{
+    width: 100%;
+}
+
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(3) figure img{
+    width: 50%;
+}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(3) figure figcaption{
+    visibility: hidden;
+}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(4) h2{
+    width: 60%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(4) ul{
+    list-style-type: disc;
+    width: 63%;
+}
+
+main.inicial .secaoSobre .flex .flex-col:nth-child(4) ul li{
+    padding: 5px 0;
+    line-height: 1.5;
+    color: var(--cinza-claro);
+}
+
+main.inicial .secaoCursos article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.inicial .secaoCursos article h2{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+main.inicial .secaoCursos article p{
+    padding-bottom: 40px;
+}
+
+main.inicial .secaoCursos article ul li{
+    text-align: center;
+    padding: 10px 0;
+}
+
+main.inicial .secaoCursos article ul li img{
+    width: 30%;
+    padding: 20px;
+}
+
+main.inicial .secaoCursos article ul li h3{}
+
+main.inicial .secaoCursos article ul li p{
+    color: var(--cinza-claro);;
+}
+
+
+
+
+
+
+
+
+
 /* INICIAL */
 
 /* EXTRAS */
@@ -97,7 +370,29 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+
+    @media screen and (min-width: 400px) {
+
+        /* PARTE VICTOR */
+    
+
+
+
+        /* PARTE FLÁVIO */
+
+
+    }
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+    
+        /* PARTE VICTOR */
+    
+
+
+
+        /* PARTE FLÁVIO */
+
+
+    }
+    
 /* MEDIA QUERIES */
